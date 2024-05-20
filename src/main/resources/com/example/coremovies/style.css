@@ -1,0 +1,38 @@
+#panelPrincipal {
+    -fx-background-color: #005A92;
+
+}
+#panelLateral {
+    -fx-background-color: #00356B;
+}
+
+#busqueda {
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+}
+
+#espacioBusqueda {
+    -fx-background-color: transparent;
+}
+
+#textoBlanco {
+    -fx-text-fill: white;
+}
+
+#itemsLateral {
+    /*-fx-background-color: #005A92;*/
+    -fx-background-radius: 50;
+}
+
+#cuenta {
+    -fx-background-color: #00356B;
+}
+
+#principalImage {
+    -fx-background-color: transparent;
+    -fx-background-radius: 50;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+    -fx-border-style: solid;
+    -fx-border-width: 5;
+}
