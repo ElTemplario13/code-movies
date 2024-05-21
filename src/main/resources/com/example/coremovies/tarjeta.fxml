@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox id="estiloTarjetas" fx:id="caja" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="400.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coremovies.tarjeta_controlador">
+   <children>
+      <ImageView fx:id="caratulaImagen" fitHeight="225.0" fitWidth="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/spider3.jpg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="250.0" prefWidth="213.0">
+         <children>
+            <Label id="textoBlanco" fx:id="nombre" alignment="CENTER" prefHeight="22.0" prefWidth="219.0" stylesheets="@style.css" text="Spider-man 3">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="26.0" prefWidth="214.0">
+               <children>
+                  <Label id="textoBlanco" fx:id="estreno" stylesheets="@style.css" text="2017">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label id="textoBlanco" fx:id="genero" stylesheets="@style.css" text="Acción">
+                     <padding>
+                        <Insets left="110.0" />
+                     </padding>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="64.0" prefWidth="214.0">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label id="textoBlanco" prefHeight="154.0" prefWidth="214.0" stylesheets="@style.css" text="Un año después de los acontecimientos provocados por el Dr. Otto Octavius en la entrega anterior, el joven adulto Peter Parker planea proponerle matrimonio a su novia Mary Jane Watson, quien ha hecho su debut musical en Broadway. " wrapText="true" />
+               </children>
+            </VBox>
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>

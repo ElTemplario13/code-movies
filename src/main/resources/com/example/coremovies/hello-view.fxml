@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="panelPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="panelPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="950.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.coremovies.controlador">
    <children>
       <VBox id="panelLateral" layoutX="-1.0" layoutY="1.0" prefHeight="650.0" prefWidth="250.0">
          <children>
@@ -159,7 +165,7 @@
             </ImageView>
          </children>
       </HBox>
-      <HBox id="cuenta" layoutX="750.0" layoutY="1.0" prefHeight="50.0" prefWidth="200.0" stylesheets="@style.css">
+      <HBox id="cuenta" layoutX="750.0" layoutY="4.0" prefHeight="50.0" prefWidth="200.0" stylesheets="@style.css">
          <children>
             <ImageView fitHeight="53.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -172,11 +178,42 @@
                </font>
             </Label>
          </children>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
       </HBox>
-      <ImageView id="principalImage" fitHeight="287.0" fitWidth="505.0" layoutX="326.0" layoutY="88.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../assets/avengers.jpg" />
-         </image>
-      </ImageView>
+      <VBox id="avengers" layoutX="288.0" layoutY="74.0" prefHeight="324.0" prefWidth="408.0" stylesheets="@style.css">
+         <children>
+            <Label id="textoBlanco" prefHeight="32.0" prefWidth="305.0" stylesheets="@style.css" text="Avengers 4 End Game">
+               <font>
+                  <Font name="Arial Bold" size="25.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+            <ImageView id="foto" fitHeight="170.0" fitWidth="279.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../assets/avengers.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label id="textoBlanco" prefHeight="107.0" prefWidth="447.0" stylesheets="@style.css" text="Después de los eventos devastadores de Avengers: Infinity War, el universo está en ruinas debido a las acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deben reunirse una vez más para deshacer sus acciones y restaurar el orden en el universo de una vez por todas, si importar cuáles son las consecuencias." wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <ScrollPane id="colorTransparente2" layoutX="249.0" layoutY="417.0" prefHeight="200.0" prefWidth="699.0" stylesheets="@style.css">
+         <content>
+            <HBox id="colorTransparente1" fx:id="movieLayout" prefHeight="183.0" prefWidth="699.0" stylesheets="@style.css" />
+         </content>
+      </ScrollPane>
    </children>
 </AnchorPane>

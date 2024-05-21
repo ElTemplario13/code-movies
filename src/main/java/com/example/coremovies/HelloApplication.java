@@ -15,7 +15,9 @@ public class HelloApplication extends Application {
 
         int ancho = 950, largo = 650;
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        /*Recolectando la información del FMLX*/
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("C:\\Users\\johna\\Documents\\Programación\\Java\\core-movies\\src\\main\\resources\\com\\example\\coremovies\\hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), ancho, largo);
         stage.getIcons().addAll(new Image("C:\\Users\\johna\\Documents\\Programación\\Java\\core-movies\\src\\main\\resources\\assets\\video-player.png"));
         stage.setTitle("  John's Movies");

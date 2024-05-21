@@ -26,13 +26,33 @@
 
 #cuenta {
     -fx-background-color: #00356B;
+    -fx-background-radius: 20;
+    -fx-effect: dropShadow(three-pass-box,rgba(80, 72, 76, 1), 3, 0, 0, 3);
 }
 
-#principalImage {
+#mainImage{
     -fx-background-color: transparent;
-    -fx-background-radius: 50;
+    -fx-background-radius: 40;
     -fx-border-radius: 20;
-    -fx-border-color: black;
-    -fx-border-style: solid;
-    -fx-border-width: 5;
+}
+
+#foto {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+}
+
+#avengers {
+     -fx-background-color: #00356B;
+     -fx-background-radius: 20;
+     -fx-effect: dropShadow(three-pass-box,rgba(80, 72, 76, 1), 5, 0, 5, 5);
+}
+
+#colorTransparente1, #colorTransparente2{
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+#estiloTarjetas {
+    -fx-background-color: #00356B;
+    -fx-background-radius: 15;
+    -fx-effect: dropShadow(three-pass-box,rgba(80, 72, 76, 1), 5, 5, 5, 5);
 }
